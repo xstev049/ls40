@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+<title>Life 4.0 Sciences &#8211; Další web používající WordPress</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Alfa%20Slab%20One%3A400%2C400italic%2C700%2C700italic%2Cbold%7CMontserrat%3A400%2C400italic%2C700%2C700italic%2C500%2C600%7CHeebo%3A400%2C400italic%2C700%2C700italic%2C300%7CPoppins%3A400%2C400italic%2C700%2C700italic%7CLato%3A400%2C400italic%2C700%2C700italic%2C500&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa%20Slab%20One%3A400%2C400italic%2C700%2C700italic%2Cbold%7CMontserrat%3A400%2C400italic%2C700%2C700italic%2C500%2C600%7CHeebo%3A400%2C400italic%2C700%2C700italic%2C300%7CPoppins%3A400%2C400italic%2C700%2C700italic%7CLato%3A400%2C400italic%2C700%2C700italic%2C500&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa%20Slab%20One%3A400%2C400italic%2C700%2C700italic%2Cbold%7CMontserrat%3A400%2C400italic%2C700%2C700italic%2C500%2C600%7CHeebo%3A400%2C400italic%2C700%2C700italic%2C300%7CPoppins%3A400%2C400italic%2C700%2C700italic%7CLato%3A400%2C400italic%2C700%2C700italic%2C500&#038;display=swap" /></noscript>
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Life 4.0 Sciences &raquo; RSS zdroj" href="http://ls40.vojtechstekly.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Life 4.0 Sciences &raquo; RSS komentářů" href="http://ls40.vojtechstekly.com/comments/feed/" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id='wp-block-image-inline-css'>
+.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image.has-custom-border img,.wp-block-image img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image.aligncenter,.wp-block-image .aligncenter,.wp-block-image.alignleft,.wp-block-image .alignleft,.wp-block-image.alignright,.wp-block-image .alignright{display:table}.wp-block-image.aligncenter>figcaption,.wp-block-image .aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image.alignright>figcaption,.wp-block-image .alignright>figcaption{display:table-caption;caption-side:bottom}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-top:.5em;margin-bottom:1em}.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;border-radius:0}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
+.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
+</style>
+<style id='wp-block-spacer-inline-css'>
+.wp-block-spacer{clear:both}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id='wp-block-columns-inline-css'>
+.wp-block-columns{display:flex;margin-bottom:1.75em;box-sizing:border-box;flex-wrap:wrap!important;align-items:normal!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;word-break:break-word;overflow-wrap:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<link rel='stylesheet' id='wp-block-cover-css' href='http://ls40.vojtechstekly.com/wp-includes/blocks/cover/style.min.css?ver=6.1.1' media='all' />
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-template-part-inline-css'>
+.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;line-height:.68;font-weight:100;margin:.05em .1em 0 0;text-transform:uppercase;font-style:normal}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fc002b;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #1b1b1b;--wp--preset--color--secondary: #038000;--wp--preset--color--third: #EEEFF3;--wp--preset--color--forth: #152B5A14;--wp--preset--color--fifth: #6F747E;--wp--preset--color--sixth: #1F386A;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--quinary-to-septenary: linear-gradient(160deg, var(--wp--preset--color--quinary), var(--wp--preset--color--septenary));--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--tiny: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;--wp--preset--font-family--primary: 'Lato';--wp--preset--font-family--secondary: 'Heebo';--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--custom--headings--typography--font-family: var(--wp--preset--font-family--primary);}.wp-block-button .wp-block-button__link{--wp--preset--color--custom-barva-1: #00000000;}body { margin: 0;--wp--style--global--content-size: 1140px;--wp--style--global--wide-size: 1200px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: 24px; }body { --wp--style--block-gap: 24px; }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: 24px;margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: 24px;margin-block-end: 0;}body .is-layout-flex{gap: 24px;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{background-color: var(--wp--preset--color--white);color: var(--wp--preset--color--primary);font-family: var(--wp--preset--font-family--secondary);padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--white);text-decoration: underline;}a:where(:not(.wp-element-button)):hover{color: #1b1b1b;}h1{font-family: var(--wp--custom--headings--typography--font-family);}h2{font-family: var(--wp--custom--headings--typography--font-family);}h3{font-family: var(--wp--custom--headings--typography--font-family);}h4{font-family: var(--wp--custom--headings--typography--font-family);}h5{font-family: var(--wp--custom--headings--typography--font-family);}h6{font-family: var(--wp--custom--headings--typography--font-family);}.wp-element-button, .wp-block-button__link{background-color: #ffffff;border-width: 0;color: var(--wp--preset--color--white);font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-third-color{color: var(--wp--preset--color--third) !important;}.has-forth-color{color: var(--wp--preset--color--forth) !important;}.has-fifth-color{color: var(--wp--preset--color--fifth) !important;}.has-sixth-color{color: var(--wp--preset--color--sixth) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-third-background-color{background-color: var(--wp--preset--color--third) !important;}.has-forth-background-color{background-color: var(--wp--preset--color--forth) !important;}.has-fifth-background-color{background-color: var(--wp--preset--color--fifth) !important;}.has-sixth-background-color{background-color: var(--wp--preset--color--sixth) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-third-border-color{border-color: var(--wp--preset--color--third) !important;}.has-forth-border-color{border-color: var(--wp--preset--color--forth) !important;}.has-fifth-border-color{border-color: var(--wp--preset--color--fifth) !important;}.has-sixth-border-color{border-color: var(--wp--preset--color--sixth) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-quinary-to-septenary-gradient-background{background: var(--wp--preset--gradient--quinary-to-septenary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-extra-large-font-size{font-size: var(--wp--preset--font-size--extra-large) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-gigantic-font-size{font-size: var(--wp--preset--font-size--gigantic) !important;}.has-primary-font-family{font-family: var(--wp--preset--font-family--primary) !important;}.has-secondary-font-family{font-family: var(--wp--preset--font-family--secondary) !important;}.wp-block-button .wp-block-button__link.has-custom-barva-1-color{color: var(--wp--preset--color--custom-barva-1) !important;}.wp-block-button .wp-block-button__link.has-custom-barva-1-background-color{background-color: var(--wp--preset--color--custom-barva-1) !important;}.wp-block-button .wp-block-button__link.has-custom-barva-1-border-color{border-color: var(--wp--preset--color--custom-barva-1) !important;}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-elements-b27579eb9ab1047f16da667d2860c329 a{color:#038000;}.wp-block-group.wp-container-71 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:540px;margin-left:auto !important;margin-right:auto !important;}.wp-block-group.wp-container-71 > .alignwide{max-width:540px;}.wp-block-columns.wp-container-4,.wp-block-columns.wp-container-9,.wp-block-columns.wp-container-14,.wp-block-columns.wp-container-17,.wp-block-columns.wp-container-21,.wp-block-columns.wp-container-30,.wp-block-columns.wp-container-37,.wp-block-columns.wp-container-44,.wp-block-columns.wp-container-49,.wp-block-columns.wp-container-54,.wp-block-columns.wp-container-60,.wp-block-columns.wp-container-67,.wp-block-columns.wp-container-70{flex-wrap:nowrap;}.wp-block-column.wp-container-10 > *,.wp-block-group.wp-container-18 > *,.wp-block-column.wp-container-19 > *,.wp-block-group.wp-container-55 > *,.wp-block-group.wp-container-56 > *,.wp-block-column.wp-container-62 > *,.wp-block-column.wp-container-63 > *,.wp-block-column.wp-container-65 > *,.wp-block-column.wp-container-66 > *,.wp-block-group.wp-container-68 > *,.wp-block-group.wp-container-72 > *,.wp-block-group.wp-container-74 > *,.wp-block-group.wp-container-76 > *,.wp-block-group.wp-container-79 > *{margin-block-start:0;margin-block-end:0;}.wp-block-column.wp-container-10.wp-block-column.wp-container-10 > * + *,.wp-block-group.wp-container-18.wp-block-group.wp-container-18 > * + *,.wp-block-column.wp-container-19.wp-block-column.wp-container-19 > * + *,.wp-block-group.wp-container-55.wp-block-group.wp-container-55 > * + *,.wp-block-group.wp-container-56.wp-block-group.wp-container-56 > * + *,.wp-block-group.wp-container-68.wp-block-group.wp-container-68 > * + *,.wp-block-group.wp-container-72.wp-block-group.wp-container-72 > * + *,.wp-block-group.wp-container-74.wp-block-group.wp-container-74 > * + *,.wp-block-group.wp-container-76.wp-block-group.wp-container-76 > * + *,.wp-block-group.wp-container-79.wp-block-group.wp-container-79 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-block-columns.wp-container-11,.wp-block-columns.wp-container-23,.wp-block-columns.wp-container-78{flex-wrap:nowrap;gap:0px;}.wp-block-group.wp-container-55 > :where(:not(.alignleft):not(.alignright):not(.alignfull)),.wp-block-group.wp-container-68 > :where(:not(.alignleft):not(.alignright):not(.alignfull)),.wp-block-group.wp-container-80 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1140px;margin-left:auto !important;margin-right:auto !important;}.wp-block-group.wp-container-55 > .alignwide,.wp-block-group.wp-container-68 > .alignwide,.wp-block-group.wp-container-80 > .alignwide{max-width:1140px;}.wp-block-group.wp-container-55 .alignfull,.wp-block-group.wp-container-68 .alignfull,.wp-block-group.wp-container-71 .alignfull,.wp-block-group.wp-container-80 .alignfull{max-width:none;}.wp-block-column.wp-container-62.wp-block-column.wp-container-62 > * + *,.wp-block-column.wp-container-63.wp-block-column.wp-container-63 > * + *,.wp-block-column.wp-container-65.wp-block-column.wp-container-65 > * + *,.wp-block-column.wp-container-66.wp-block-column.wp-container-66 > * + *{margin-block-start:10px;margin-block-end:0;}
+</style>
+<link data-minify="1" rel='stylesheet' id='travey-style-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/themes/travey/style.css?ver=1669886180' media='all' />
+<style id='travey-style-inline-css'>
+@import url(http://ls40.vojtechstekly.com/wp-content/fonts/8739365f8bb2afc91f30906ced75fcc3.css);
+</style>
+<link data-minify="1" rel='stylesheet' id='travey-core-add-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/themes/travey/assets/css/core-add.css?ver=1669886180' media='all' />
+<link data-minify="1" rel='stylesheet' id='travey-animate-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/themes/travey/assets/css/animation.css?ver=1669886180' media='all' />
+<link data-minify="1" rel='stylesheet' id='gutenverse-frontend-font-awesome-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/plugins/gutenverse/assets/fontawesome/css/all.min.css?ver=1669886180' media='all' />
+<link data-minify="1" rel='stylesheet' id='gutenverse-frontend-icon-gutenverse-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/plugins/gutenverse/assets/gtnicon/gtnicon.css?ver=1669886180' media='all' />
+<link data-minify="1" rel='stylesheet' id='gutenverse-frontend-style-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/plugins/gutenverse/assets/css/frontend-block.css?ver=1669886180' media='all' />
+<link data-minify="1" rel='stylesheet' id='gutenverse-frontend-icons-css' href='http://ls40.vojtechstekly.com/wp-content/cache/min/1/wp-content/plugins/gutenverse/assets/css/frontend-icon.css?ver=1669886180' media='all' />
+<link rel="https://api.w.org/" href="http://ls40.vojtechstekly.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ls40.vojtechstekly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ls40.vojtechstekly.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+		<style id="gutenverse-global-css"> 
+			body { --gutenverse-font-family-h1-style-1:Montserrat;--gutenverse-font-size-h1-style-1:200px;--gutenverse-font-weight-h1-style-1:600;--gutenverse-font-transform-h1-style-1:uppercase;--gutenverse-font-lineHeight-h1-style-1:200px;--gutenverse-font-spacing-h1-style-1:0.125em;--gutenverse-font-family-h1-style-2:Montserrat;--gutenverse-font-size-h1-style-2:48px;--gutenverse-font-weight-h1-style-2:600;--gutenverse-font-transform-h1-style-2:uppercase;--gutenverse-font-lineHeight-h1-style-2:56px;--gutenverse-font-spacing-h1-style-2:0.125em;--gutenverse-font-family-h1-style-3:Montserrat;--gutenverse-font-size-h1-style-3:96px;--gutenverse-font-weight-h1-style-3:600;--gutenverse-font-transform-h1-style-3:uppercase;--gutenverse-font-lineHeight-h1-style-3:96px;--gutenverse-font-spacing-h1-style-3:0.031em;--gutenverse-font-family-h2-style-1:Montserrat;--gutenverse-font-size-h2-style-1:48px;--gutenverse-font-weight-h2-style-1:600;--gutenverse-font-lineHeight-h2-style-1:52px;--gutenverse-font-family-h2-style-2:Montserrat;--gutenverse-font-size-h2-style-2:42px;--gutenverse-font-weight-h2-style-2:600;--gutenverse-font-lineHeight-h2-style-2:42px;--gutenverse-font-family-h2-style-3:Montserrat;--gutenverse-font-size-h2-style-3:32px;--gutenverse-font-weight-h2-style-3:600;--gutenverse-font-lineHeight-h2-style-3:32px;--gutenverse-font-family-h3-style-1:Montserrat;--gutenverse-font-size-h3-style-1:36px;--gutenverse-font-weight-h3-style-1:600;--gutenverse-font-lineHeight-h3-style-1:36px;--gutenverse-font-family-h3-style-2:Montserrat;--gutenverse-font-size-h3-style-2:24px;--gutenverse-font-weight-h3-style-2:600;--gutenverse-font-transform-h3-style-2:uppercase;--gutenverse-font-lineHeight-h3-style-2:24px;--gutenverse-font-spacing-h3-style-2:0.075em;--gutenverse-font-family-h4-style-1:Montserrat;--gutenverse-font-size-h4-style-1:20px;--gutenverse-font-weight-h4-style-1:600;--gutenverse-font-lineHeight-h4-style-1:24px;--gutenverse-font-family-h4-style-2:Montserrat;--gutenverse-font-size-h4-style-2:20px;--gutenverse-font-weight-h4-style-2:300;--gutenverse-font-lineHeight-h4-style-2:24px;--gutenverse-font-family-h5-font:Montserrat;--gutenverse-font-size-h5-font:18px;--gutenverse-font-weight-h5-font:500;--gutenverse-font-lineHeight-h5-font:18px;--gutenverse-font-family-h6-font:Montserrat;--gutenverse-font-size-h6-font:12px;--gutenverse-font-weight-h6-font:600;--gutenverse-font-transform-h6-font:uppercase;--gutenverse-font-lineHeight-h6-font:12px;--gutenverse-font-spacing-h6-font:0.081em;--gutenverse-font-family-404-font:Montserrat;--gutenverse-font-size-404-font:192px;--gutenverse-font-weight-404-font:600;--gutenverse-font-lineHeight-404-font:192px;--gutenverse-font-family-iconlist-font:Montserrat;--gutenverse-font-size-iconlist-font:13px;--gutenverse-font-weight-iconlist-font:300;--gutenverse-font-lineHeight-iconlist-font:19.2px;--gutenverse-font-family-nav-font:Montserrat;--gutenverse-font-size-nav-font:12px;--gutenverse-font-weight-nav-font:600;--gutenverse-font-transform-nav-font:uppercase;--gutenverse-font-lineHeight-nav-font:18px;--gutenverse-font-spacing-nav-font:0.0625em;--gutenverse-font-family-button-style-1:Montserrat;--gutenverse-font-size-button-style-1:16px;--gutenverse-font-weight-button-style-1:600;--gutenverse-font-transform-button-style-1:uppercase;--gutenverse-font-lineHeight-button-style-1:16px;--gutenverse-font-spacing-button-style-1:0.075em;--gutenverse-font-family-button-style-2:Montserrat;--gutenverse-font-size-button-style-2:14px;--gutenverse-font-weight-button-style-2:600;--gutenverse-font-transform-button-style-2:uppercase;--gutenverse-font-lineHeight-button-style-2:14px;--gutenverse-font-spacing-button-style-2:0.075em;--gutenverse-font-family-button-style-3:Montserrat;--gutenverse-font-size-button-style-3:12px;--gutenverse-font-weight-button-style-3:600;--gutenverse-font-transform-button-style-3:uppercase;--gutenverse-font-lineHeight-button-style-3:12px;--gutenverse-font-spacing-button-style-3:0.1em;--gutenverse-font-family-text-editor-font:Montserrat;--gutenverse-font-size-text-editor-font:16px;--gutenverse-font-weight-text-editor-font:300;--gutenverse-font-lineHeight-text-editor-font:24px;--gutenverse-font-family-testimonial-name-font:Montserrat;--gutenverse-font-size-testimonial-name-font:18px;--gutenverse-font-weight-testimonial-name-font:600;--gutenverse-font-lineHeight-testimonial-name-font:27px;--gutenverse-font-family-testimonial-desg-font:Montserrat;--gutenverse-font-size-testimonial-desg-font:14px;--gutenverse-font-weight-testimonial-desg-font:300;--gutenverse-font-lineHeight-testimonial-desg-font:22px;--gutenverse-font-family-testimonial-desc-font:Montserrat;--gutenverse-font-size-testimonial-desc-font:15px;--gutenverse-font-weight-testimonial-desc-font:300;--gutenverse-font-lineHeight-testimonial-desc-font:27.2px;--gutenverse-font-family-blog-title-one-font:Montserrat;--gutenverse-font-size-blog-title-one-font:24px;--gutenverse-font-weight-blog-title-one-font:600;--gutenverse-font-lineHeight-blog-title-one-font:28px;--gutenverse-font-family-blog-title-two-font:Montserrat;--gutenverse-font-size-blog-title-two-font:14px;--gutenverse-font-weight-blog-title-two-font:400;--gutenverse-font-lineHeight-blog-title-two-font:21px;--gutenverse-font-family-blog-category-font:Montserrat;--gutenverse-font-size-blog-category-font:16px;--gutenverse-font-weight-blog-category-font:600;--gutenverse-font-lineHeight-blog-category-font:16px;--gutenverse-font-family-iconlist-two-font:Montserrat;--gutenverse-font-size-iconlist-two-font:16px;--gutenverse-font-weight-iconlist-two-font:400;--gutenverse-font-lineHeight-iconlist-two-font:24px;--gutenverse-font-family-accordion-title-font:Montserrat;--gutenverse-font-size-accordion-title-font:16px;--gutenverse-font-weight-accordion-title-font:500;--gutenverse-font-lineHeight-accordion-title-font:24px;--gutenverse-font-family-fun-fact-number-font:Montserrat;--gutenverse-font-size-fun-fact-number-font:32px;--gutenverse-font-weight-fun-fact-number-font:600;--gutenverse-font-lineHeight-fun-fact-number-font:32px;--gutenverse-font-family-h1-style-1:Montserrat;--gutenverse-font-size-h1-style-1:200px;--gutenverse-font-weight-h1-style-1:600;--gutenverse-font-transform-h1-style-1:uppercase;--gutenverse-font-lineHeight-h1-style-1:200px;--gutenverse-font-spacing-h1-style-1:0.125em;--gutenverse-font-family-h1-style-2:Montserrat;--gutenverse-font-size-h1-style-2:48px;--gutenverse-font-weight-h1-style-2:600;--gutenverse-font-transform-h1-style-2:uppercase;--gutenverse-font-lineHeight-h1-style-2:56px;--gutenverse-font-spacing-h1-style-2:0.125em;--gutenverse-font-family-h1-style-3:Montserrat;--gutenverse-font-size-h1-style-3:96px;--gutenverse-font-weight-h1-style-3:600;--gutenverse-font-transform-h1-style-3:uppercase;--gutenverse-font-lineHeight-h1-style-3:96px;--gutenverse-font-spacing-h1-style-3:0.031em;--gutenverse-font-family-h2-style-1:Montserrat;--gutenverse-font-size-h2-style-1:48px;--gutenverse-font-weight-h2-style-1:600;--gutenverse-font-lineHeight-h2-style-1:52px;--gutenverse-font-family-h2-style-2:Montserrat;--gutenverse-font-size-h2-style-2:42px;--gutenverse-font-weight-h2-style-2:600;--gutenverse-font-lineHeight-h2-style-2:42px;--gutenverse-font-family-h2-style-3:Montserrat;--gutenverse-font-size-h2-style-3:32px;--gutenverse-font-weight-h2-style-3:600;--gutenverse-font-lineHeight-h2-style-3:32px;--gutenverse-font-family-h3-style-1:Montserrat;--gutenverse-font-size-h3-style-1:36px;--gutenverse-font-weight-h3-style-1:600;--gutenverse-font-lineHeight-h3-style-1:36px;--gutenverse-font-family-h3-style-2:Montserrat;--gutenverse-font-size-h3-style-2:24px;--gutenverse-font-weight-h3-style-2:600;--gutenverse-font-transform-h3-style-2:uppercase;--gutenverse-font-lineHeight-h3-style-2:24px;--gutenverse-font-spacing-h3-style-2:0.075em;--gutenverse-font-family-h4-style-1:Montserrat;--gutenverse-font-size-h4-style-1:20px;--gutenverse-font-weight-h4-style-1:600;--gutenverse-font-lineHeight-h4-style-1:24px;--gutenverse-font-family-h4-style-2:Montserrat;--gutenverse-font-size-h4-style-2:20px;--gutenverse-font-weight-h4-style-2:300;--gutenverse-font-lineHeight-h4-style-2:24px;--gutenverse-font-family-h5-font:Montserrat;--gutenverse-font-size-h5-font:18px;--gutenverse-font-weight-h5-font:500;--gutenverse-font-lineHeight-h5-font:18px;--gutenverse-font-family-h6-font:Montserrat;--gutenverse-font-size-h6-font:12px;--gutenverse-font-weight-h6-font:600;--gutenverse-font-transform-h6-font:uppercase;--gutenverse-font-lineHeight-h6-font:12px;--gutenverse-font-spacing-h6-font:0.081em;--gutenverse-font-family-404-font:Montserrat;--gutenverse-font-size-404-font:192px;--gutenverse-font-weight-404-font:600;--gutenverse-font-lineHeight-404-font:192px;--gutenverse-font-family-iconlist-font:Montserrat;--gutenverse-font-size-iconlist-font:13px;--gutenverse-font-weight-iconlist-font:300;--gutenverse-font-lineHeight-iconlist-font:19.2px;--gutenverse-font-family-nav-font:Montserrat;--gutenverse-font-size-nav-font:12px;--gutenverse-font-weight-nav-font:600;--gutenverse-font-transform-nav-font:uppercase;--gutenverse-font-lineHeight-nav-font:18px;--gutenverse-font-spacing-nav-font:0.0625em;--gutenverse-font-family-button-style-1:Montserrat;--gutenverse-font-size-button-style-1:16px;--gutenverse-font-weight-button-style-1:600;--gutenverse-font-transform-button-style-1:uppercase;--gutenverse-font-lineHeight-button-style-1:16px;--gutenverse-font-spacing-button-style-1:0.075em;--gutenverse-font-family-button-style-2:Montserrat;--gutenverse-font-size-button-style-2:14px;--gutenverse-font-weight-button-style-2:600;--gutenverse-font-transform-button-style-2:uppercase;--gutenverse-font-lineHeight-button-style-2:14px;--gutenverse-font-spacing-button-style-2:0.075em;--gutenverse-font-family-button-style-3:Montserrat;--gutenverse-font-size-button-style-3:12px;--gutenverse-font-weight-button-style-3:600;--gutenverse-font-transform-button-style-3:uppercase;--gutenverse-font-lineHeight-button-style-3:12px;--gutenverse-font-spacing-button-style-3:0.1em;--gutenverse-font-family-text-editor-font:Montserrat;--gutenverse-font-size-text-editor-font:16px;--gutenverse-font-weight-text-editor-font:300;--gutenverse-font-lineHeight-text-editor-font:24px;--gutenverse-font-family-testimonial-name-font:Montserrat;--gutenverse-font-size-testimonial-name-font:18px;--gutenverse-font-weight-testimonial-name-font:600;--gutenverse-font-lineHeight-testimonial-name-font:27px;--gutenverse-font-family-testimonial-desg-font:Montserrat;--gutenverse-font-size-testimonial-desg-font:14px;--gutenverse-font-weight-testimonial-desg-font:300;--gutenverse-font-lineHeight-testimonial-desg-font:22px;--gutenverse-font-family-testimonial-desc-font:Montserrat;--gutenverse-font-size-testimonial-desc-font:15px;--gutenverse-font-weight-testimonial-desc-font:300;--gutenverse-font-lineHeight-testimonial-desc-font:27.2px;--gutenverse-font-family-blog-title-one-font:Montserrat;--gutenverse-font-size-blog-title-one-font:24px;--gutenverse-font-weight-blog-title-one-font:600;--gutenverse-font-lineHeight-blog-title-one-font:28px;--gutenverse-font-family-blog-title-two-font:Montserrat;--gutenverse-font-size-blog-title-two-font:14px;--gutenverse-font-weight-blog-title-two-font:400;--gutenverse-font-lineHeight-blog-title-two-font:21px;--gutenverse-font-family-blog-category-font:Montserrat;--gutenverse-font-size-blog-category-font:16px;--gutenverse-font-weight-blog-category-font:600;--gutenverse-font-lineHeight-blog-category-font:16px;--gutenverse-font-family-iconlist-two-font:Montserrat;--gutenverse-font-size-iconlist-two-font:16px;--gutenverse-font-weight-iconlist-two-font:400;--gutenverse-font-lineHeight-iconlist-two-font:24px;--gutenverse-font-family-accordion-title-font:Montserrat;--gutenverse-font-size-accordion-title-font:16px;--gutenverse-font-weight-accordion-title-font:500;--gutenverse-font-lineHeight-accordion-title-font:24px;--gutenverse-font-family-fun-fact-number-font:Montserrat;--gutenverse-font-size-fun-fact-number-font:32px;--gutenverse-font-weight-fun-fact-number-font:600;--gutenverse-font-lineHeight-fun-fact-number-font:32px; } 
+				@media only screen and (max-width: 780px) { body {--gutenverse-font-size-h1-style-1:152px;--gutenverse-font-lineHeight-h1-style-1:152px;--gutenverse-font-size-h2-style-1:38px;--gutenverse-font-lineHeight-h2-style-1:42px;--gutenverse-font-size-h2-style-2:32px;--gutenverse-font-lineHeight-h2-style-2:32px;--gutenverse-font-size-h2-style-3:30px;--gutenverse-font-lineHeight-h2-style-3:30px;--gutenverse-font-size-h4-style-1:20px;--gutenverse-font-lineHeight-h4-style-1:24px;--gutenverse-font-size-h4-style-2:20px;--gutenverse-font-lineHeight-h4-style-2:24px;--gutenverse-font-size-404-font:128px;--gutenverse-font-lineHeight-404-font:128px;--gutenverse-font-size-blog-title-two-font:24px;--gutenverse-font-lineHeight-blog-title-two-font:30px;--gutenverse-font-size-h1-style-1:152px;--gutenverse-font-lineHeight-h1-style-1:152px;--gutenverse-font-size-h2-style-1:38px;--gutenverse-font-lineHeight-h2-style-1:42px;--gutenverse-font-size-h2-style-2:32px;--gutenverse-font-lineHeight-h2-style-2:32px;--gutenverse-font-size-h2-style-3:30px;--gutenverse-font-lineHeight-h2-style-3:30px;--gutenverse-font-size-h4-style-1:20px;--gutenverse-font-lineHeight-h4-style-1:24px;--gutenverse-font-size-h4-style-2:20px;--gutenverse-font-lineHeight-h4-style-2:24px;--gutenverse-font-size-404-font:128px;--gutenverse-font-lineHeight-404-font:128px;--gutenverse-font-size-blog-title-two-font:24px;--gutenverse-font-lineHeight-blog-title-two-font:30px;}
+				@media only screen and (max-width: 425px) { body {--gutenverse-font-size-h1-style-1:76px;--gutenverse-font-lineHeight-h1-style-1:76px;--gutenverse-font-size-h1-style-2:24px;--gutenverse-font-lineHeight-h1-style-2:32px;--gutenverse-font-size-h1-style-3:24px;--gutenverse-font-lineHeight-h1-style-3:32px;--gutenverse-font-size-h2-style-1:28px;--gutenverse-font-lineHeight-h2-style-1:32px;--gutenverse-font-size-h2-style-2:20px;--gutenverse-font-lineHeight-h2-style-2:20px;--gutenverse-font-size-h2-style-3:20px;--gutenverse-font-lineHeight-h2-style-3:20px;--gutenverse-font-size-h3-style-1:24px;--gutenverse-font-lineHeight-h3-style-1:24px;--gutenverse-font-size-h3-style-2:16px;--gutenverse-font-lineHeight-h3-style-2:24px;--gutenverse-font-size-h4-style-1:18px;--gutenverse-font-lineHeight-h4-style-1:22px;--gutenverse-font-size-h4-style-2:16px;--gutenverse-font-lineHeight-h4-style-2:22px;--gutenverse-font-size-404-font:86px;--gutenverse-font-lineHeight-404-font:86px;--gutenverse-font-size-button-style-1:14px;--gutenverse-font-lineHeight-button-style-1:14px;--gutenverse-font-size-button-style-2:12px;--gutenverse-font-lineHeight-button-style-2:12px;--gutenverse-font-size-text-editor-font:14px;--gutenverse-font-size-blog-title-one-font:20px;--gutenverse-font-lineHeight-blog-title-one-font:22px;--gutenverse-font-size-blog-title-two-font:18px;--gutenverse-font-lineHeight-blog-title-two-font:20px;--gutenverse-font-size-blog-category-font:14px;--gutenverse-font-lineHeight-blog-category-font:14px;--gutenverse-font-size-iconlist-two-font:14px;--gutenverse-font-lineHeight-iconlist-two-font:21.6px;--gutenverse-font-size-accordion-title-font:14px;--gutenverse-font-lineHeight-accordion-title-font:21.6px;--gutenverse-font-size-fun-fact-number-font:24px;--gutenverse-font-lineHeight-fun-fact-number-font:24px;--gutenverse-font-size-h1-style-1:76px;--gutenverse-font-lineHeight-h1-style-1:76px;--gutenverse-font-size-h1-style-2:24px;--gutenverse-font-lineHeight-h1-style-2:32px;--gutenverse-font-size-h1-style-3:24px;--gutenverse-font-lineHeight-h1-style-3:32px;--gutenverse-font-size-h2-style-1:28px;--gutenverse-font-lineHeight-h2-style-1:32px;--gutenverse-font-size-h2-style-2:20px;--gutenverse-font-lineHeight-h2-style-2:20px;--gutenverse-font-size-h2-style-3:20px;--gutenverse-font-lineHeight-h2-style-3:20px;--gutenverse-font-size-h3-style-1:24px;--gutenverse-font-lineHeight-h3-style-1:24px;--gutenverse-font-size-h3-style-2:16px;--gutenverse-font-lineHeight-h3-style-2:24px;--gutenverse-font-size-h4-style-1:18px;--gutenverse-font-lineHeight-h4-style-1:22px;--gutenverse-font-size-h4-style-2:16px;--gutenverse-font-lineHeight-h4-style-2:22px;--gutenverse-font-size-404-font:86px;--gutenverse-font-lineHeight-404-font:86px;--gutenverse-font-size-button-style-1:14px;--gutenverse-font-lineHeight-button-style-1:14px;--gutenverse-font-size-button-style-2:12px;--gutenverse-font-lineHeight-button-style-2:12px;--gutenverse-font-size-text-editor-font:14px;--gutenverse-font-size-blog-title-one-font:20px;--gutenverse-font-lineHeight-blog-title-one-font:22px;--gutenverse-font-size-blog-title-two-font:18px;--gutenverse-font-lineHeight-blog-title-two-font:20px;--gutenverse-font-size-blog-category-font:14px;--gutenverse-font-lineHeight-blog-category-font:14px;--gutenverse-font-size-iconlist-two-font:14px;--gutenverse-font-lineHeight-iconlist-two-font:21.6px;--gutenverse-font-size-accordion-title-font:14px;--gutenverse-font-lineHeight-accordion-title-font:21.6px;--gutenverse-font-size-fun-fact-number-font:24px;--gutenverse-font-lineHeight-fun-fact-number-font:24px;}		</style>
+				<style id="gutenverse-template-generator"> 
+			#guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu { justify-content: flex-end; } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > li > a, #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > ul > li > a { height: 50px; font-family: "Montserrat"; font-size: 15px; font-weight: 600; text-transform: uppercase; line-height: 18px; letter-spacing: 0.0625em; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; color: var(--wp--preset--color--secondary); } #guten-6AzyrV .gutenverse-menu-wrapper { background-color: rgba(255, 255, 255, 1);  margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > li:hover > a, #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > ul > li:hover > a { color: var(--wp--preset--color--primary); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children > a > i { color: rgba(0, 21, 68, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children:hover > a > i { color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children.current-menu-parent > a > i { color: rgba(242, 139, 56, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li  a { font-family: "Lato"; font-size: 12px; font-weight: 500; text-transform: uppercase; line-height: 18px; letter-spacing: 0.125em;  } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li > a { color: rgba(0, 21, 68, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li:hover > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu > li.current-menu-item > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li > a { border-style: none; } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children .sub-menu { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children .sub-menu { background-color: rgba(255, 255, 255, 1); width: 180px; } #guten-6AzyrV .gutenverse-hamburger-wrapper { justify-content: right; } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-nav-identity-panel .gutenverse-close-menu { background-color: rgba(242, 139, 56, 1); border-style: none; } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-nav-identity-panel .gutenverse-close-menu:hover { background-color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-hamburger-menu:hover { border-style: none; } #guten-6AzyrV { background-color: var(--wp--preset--color--fifth);  align-self: flex-end; vertical-align: bottom;   } #guten-6AzyrV:hover { background-color: var(--wp--preset--color--secondary); } @media only screen and (max-width: 780px) { #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > li > a, #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > ul > li > a { height: 31px; font-size: 12px; line-height: 18px;  color: rgba(0, 21, 68, 1); } #guten-6AzyrV .gutenverse-menu-wrapper { padding-top: 20px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > li:hover > a, #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > ul > li:hover > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > li.current-menu-item > a, #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > ul > li.current-menu-item > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > li.current-menu-ancestor > a, #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu > ul > li.current-menu-ancestor > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children > a > i { color: rgba(0, 21, 68, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children:hover > a > i { color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-menu li.menu-item-has-children.current-menu-parent > a > i { color: rgba(242, 139, 56, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li  a { font-size: 12px; padding-top: 0px; padding-right: 0px; padding-bottom: 020px; padding-left: 20px; } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li > a { color: rgba(0, 21, 68, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu li:hover > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV .gutenverse-menu-wrapper .gutenverse-menu .sub-menu > li.current-menu-item > a { color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-hamburger-menu { width: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px; color: rgba(242, 139, 56, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-hamburger-menu i { font-size: 25px; } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-nav-identity-panel .gutenverse-close-menu {  padding-top: 15px; padding-right: 10px; padding-bottom: 15px; padding-left: 10px; margin-top: 15px; margin-right: 15px; margin-bottom: 15px; margin-left: 15px; color: rgba(255, 255, 255, 1); border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px; } #guten-6AzyrV.guten-nav-menu .gutenverse-menu-wrapper .gutenverse-nav-identity-panel .gutenverse-close-menu:hover { color: rgba(255, 255, 255, 1); } #guten-6AzyrV.guten-nav-menu .gutenverse-hamburger-menu:hover { border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-bottom-left-radius: 50px; } }.guten-QgPv9u.layout-boxed > .guten-container { max-width: 1140px; } @media only screen and (max-width: 425px) { .guten-QgPv9u > .guten-container { flex-wrap: wrap; } .guten-QgPv9u > .guten-container > .guten-column { width: 100%; } }.guten-uDAmob.layout-boxed > .guten-container { max-width: 1140px; } @media only screen and (max-width: 425px) { .guten-uDAmob > .guten-container { flex-wrap: wrap; } .guten-uDAmob > .guten-container > .guten-column { width: 100%; } }.guten-DCIHGY.layout-boxed > .guten-container { max-width: 1140px; } .guten-DCIHGY > .guten-background-overlay { background-color: var(--wp--preset--color--secondary); opacity: 1; } .guten-DCIHGY:not(.background-animated), .guten-DCIHGY.background-animated > .guten-background-animated .animated-layer { background-color: var(--wp--preset--color--secondary); background-position: top center; background-size: cover; background-attachment: fixed; } .guten-DCIHGY {  padding-right: 0px; padding-bottom: 0px; padding-left: 0px; } @media only screen and (max-width: 780px) { .guten-DCIHGY { padding-top: 80px; } } @media only screen and (max-width: 425px) { .guten-DCIHGY > .guten-container { flex-wrap: wrap; } .guten-DCIHGY > .guten-container > .guten-column { width: 100%; } .guten-DCIHGY { padding-top: 50px; } }.guten-IMwrbo.layout-boxed > .guten-container { max-width: 1140px; } .guten-IMwrbo > .guten-background-overlay { background-color: var(--wp--preset--color--secondary); opacity: 1; } .guten-IMwrbo:not(.background-animated), .guten-IMwrbo.background-animated > .guten-background-animated .animated-layer { background-color: var(--wp--preset--color--secondary); background-position: top center; background-size: cover; background-attachment: fixed; } .guten-IMwrbo {  padding-top: 50px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; } @media only screen and (max-width: 780px) { .guten-IMwrbo { padding-top: 80px; } } @media only screen and (max-width: 425px) { .guten-IMwrbo > .guten-container { flex-wrap: wrap; } .guten-IMwrbo > .guten-container > .guten-column { width: 100%; } .guten-IMwrbo { padding-top: 50px; } }.guten-UtR0bu.guten-spacer { padding-bottom: 100px; }.guten-2fjeQh { text-align: center;  } h1.guten-element.guten-2fjeQh, h2.guten-element.guten-2fjeQh, h3.guten-element.guten-2fjeQh, h4.guten-element.guten-2fjeQh, h5.guten-element.guten-2fjeQh, h6.guten-element.guten-2fjeQh { font-family: "Montserrat"; font-size: 35px; font-weight: 600;  }.guten-DYchT5.guten-spacer { padding-bottom: 50px; }.guten-oKMe6g { text-align: center;  padding-top: 40px; padding-bottom: 40px; } h1.guten-element.guten-oKMe6g, h2.guten-element.guten-oKMe6g, h3.guten-element.guten-oKMe6g, h4.guten-element.guten-oKMe6g, h5.guten-element.guten-oKMe6g, h6.guten-element.guten-oKMe6g { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 35px; font-weight: 600;  }.guten-QnjPNr {  padding-top: 40px; }.guten-XzWxCd { text-align: center;  padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-XzWxCd, h2.guten-element.guten-XzWxCd, h3.guten-element.guten-XzWxCd, h4.guten-element.guten-XzWxCd, h5.guten-element.guten-XzWxCd, h6.guten-element.guten-XzWxCd { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 35px; font-weight: 600;  }.guten-zoxxGG { text-align: center;  padding-bottom: 10px; } h1.guten-element.guten-zoxxGG, h2.guten-element.guten-zoxxGG, h3.guten-element.guten-zoxxGG, h4.guten-element.guten-zoxxGG, h5.guten-element.guten-zoxxGG, h6.guten-element.guten-zoxxGG { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 18px; font-weight: 500;  }.guten-NwLSVL { text-align: center;  padding-bottom: 10px; } h1.guten-element.guten-NwLSVL, h2.guten-element.guten-NwLSVL, h3.guten-element.guten-NwLSVL, h4.guten-element.guten-NwLSVL, h5.guten-element.guten-NwLSVL, h6.guten-element.guten-NwLSVL { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 400;  }.guten-g9rBtV { text-align: center;  } h1.guten-element.guten-g9rBtV, h2.guten-element.guten-g9rBtV, h3.guten-element.guten-g9rBtV, h4.guten-element.guten-g9rBtV, h5.guten-element.guten-g9rBtV, h6.guten-element.guten-g9rBtV { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 400;  }.guten-YiSWo6 { text-align: center;  padding-bottom: 10px; } h1.guten-element.guten-YiSWo6, h2.guten-element.guten-YiSWo6, h3.guten-element.guten-YiSWo6, h4.guten-element.guten-YiSWo6, h5.guten-element.guten-YiSWo6, h6.guten-element.guten-YiSWo6 { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 18px; font-weight: 500;  }.guten-l6uGL1 { text-align: center;  padding-bottom: 10px; } h1.guten-element.guten-l6uGL1, h2.guten-element.guten-l6uGL1, h3.guten-element.guten-l6uGL1, h4.guten-element.guten-l6uGL1, h5.guten-element.guten-l6uGL1, h6.guten-element.guten-l6uGL1 { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500;  }.guten-5Bvogw { text-align: center;  } h1.guten-element.guten-5Bvogw, h2.guten-element.guten-5Bvogw, h3.guten-element.guten-5Bvogw, h4.guten-element.guten-5Bvogw, h5.guten-element.guten-5Bvogw, h6.guten-element.guten-5Bvogw { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500;  }.guten-fpXXLK { text-align: center;  padding-bottom: 10px; } h1.guten-element.guten-fpXXLK, h2.guten-element.guten-fpXXLK, h3.guten-element.guten-fpXXLK, h4.guten-element.guten-fpXXLK, h5.guten-element.guten-fpXXLK, h6.guten-element.guten-fpXXLK { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 18px; font-weight: 500;  }.guten-UDWTu9 { text-align: center;  padding-bottom: 10px; } h1.guten-element.guten-UDWTu9, h2.guten-element.guten-UDWTu9, h3.guten-element.guten-UDWTu9, h4.guten-element.guten-UDWTu9, h5.guten-element.guten-UDWTu9, h6.guten-element.guten-UDWTu9 { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500;  }.guten-06cB3L { text-align: center;  } h1.guten-element.guten-06cB3L, h2.guten-element.guten-06cB3L, h3.guten-element.guten-06cB3L, h4.guten-element.guten-06cB3L, h5.guten-element.guten-06cB3L, h6.guten-element.guten-06cB3L { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500;  }.guten-fk0oxb.layout-boxed > .guten-container { max-width: 1140px; } @media only screen and (max-width: 425px) { .guten-fk0oxb > .guten-container { flex-wrap: wrap; } .guten-fk0oxb > .guten-container > .guten-column { width: 100%; } }.guten-D46z7W { width: 100%;  } .guten-section > .guten-container > .guten-D46z7W.guten-column > .sticky-wrapper > .guten-column-wrapper {   } @media only screen and (max-width: 780px) { .guten-D46z7W { width: 100%; } }.guten-iy9Nqs { width: 100%;  } .guten-section > .guten-container > .guten-iy9Nqs.guten-column > .sticky-wrapper > .guten-column-wrapper {   } @media only screen and (max-width: 780px) { .guten-iy9Nqs { width: 100%; } }.guten-6zpN4F { text-align: center;  } h1.guten-element.guten-6zpN4F, h2.guten-element.guten-6zpN4F, h3.guten-element.guten-6zpN4F, h4.guten-element.guten-6zpN4F, h5.guten-element.guten-6zpN4F, h6.guten-element.guten-6zpN4F { font-family: "Montserrat"; font-size: 35px; font-weight: 600;  }.guten-V1k4ON.guten-spacer { padding-bottom: 0px; }.guten-rAXcd3 { text-align: center; background-color: ; animation-delay: 0s;  margin-top: 50px; margin-bottom: 50px; } h1.guten-element.guten-rAXcd3, h2.guten-element.guten-rAXcd3, h3.guten-element.guten-rAXcd3, h4.guten-element.guten-rAXcd3, h5.guten-element.guten-rAXcd3, h6.guten-element.guten-rAXcd3 { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 35px; font-weight: 600;  } @media only screen and (max-width: 425px) { h1.guten-element.guten-rAXcd3, h2.guten-element.guten-rAXcd3, h3.guten-element.guten-rAXcd3, h4.guten-element.guten-rAXcd3, h5.guten-element.guten-rAXcd3, h6.guten-element.guten-rAXcd3 { font-size: 16px; } }.guten-jZ3IRh { text-align: center; animation-delay: 0.08s;   } h1.guten-element.guten-jZ3IRh, h2.guten-element.guten-jZ3IRh, h3.guten-element.guten-jZ3IRh, h4.guten-element.guten-jZ3IRh, h5.guten-element.guten-jZ3IRh, h6.guten-element.guten-jZ3IRh { color: rgba(255, 255, 255, 1); font-family: "Poppins"; font-size: 32px; font-weight: 400;  } @media only screen and (max-width: 425px) { h1.guten-element.guten-jZ3IRh, h2.guten-element.guten-jZ3IRh, h3.guten-element.guten-jZ3IRh, h4.guten-element.guten-jZ3IRh, h5.guten-element.guten-jZ3IRh, h6.guten-element.guten-jZ3IRh { font-size: 24px; } }.guten-oA92ji { columns: 1; text-align: center; color: rgba(255, 255, 255, 1); font-family: "Heebo"; font-size: 16px; font-weight: 300; animation-delay: 0.16s;  padding-top: 0%; padding-right: 26%; padding-bottom: 0%; padding-left: 26%; } @media only screen and (max-width: 425px) { .guten-oA92ji { font-size: 14px; padding-top: 0px; padding-right: 35px; padding-bottom: 0px; padding-left: 35px; } }.guten-u4KUuP.layout-boxed > .guten-container { max-width: 1140px; } .guten-u4KUuP:not(.background-animated), .guten-u4KUuP.background-animated > .guten-background-animated .animated-layer { background-color: var(--wp--preset--color--secondary); } .guten-u4KUuP { border-top-left-radius: 8px;border-top-right-radius: 8px;border-bottom-right-radius: 8px;border-bottom-left-radius: 8px; box-shadow:  0px 0px 22px 0px rgba(35, 25, 1, 0);   margin-top: 50px; margin-right: 0px; margin-bottom: 40px; margin-left: 0px; padding-right: 30px; padding-left: 30px; } @media only screen and (max-width: 780px) { .guten-u4KUuP { margin-right: 15px; margin-left: 15px; padding-right: 25px; padding-bottom: 5px; padding-left: 25px; } } @media only screen and (max-width: 425px) { .guten-u4KUuP > .guten-container { flex-wrap: wrap; } .guten-u4KUuP > .guten-container > .guten-column { width: 100%; } .guten-u4KUuP { border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px; animation-name: none; visibility: visible !important; margin-top: 5px; margin-right: 10px; margin-left: 10px;  } }.guten-IFP1YC.guten-button-wrapper { justify-content: center; } .guten-IFP1YC.guten-button-wrapper .guten-button { width: 17%; background-color: var(--wp--preset--color--white); } .guten-IFP1YC.guten-button-wrapper .guten-button i { margin-left: 12px; font-size: 21px; color: var(--wp--preset--color--secondary); } .guten-IFP1YC.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--secondary); font-family: "Montserrat"; font-size: 17px; font-weight: 600; } .guten-IFP1YC.guten-button-wrapper .guten-button:hover span { color: var(--wp--preset--color--white); } .guten-IFP1YC.guten-button-wrapper .guten-button:hover i { color: var(--wp--preset--color--white); } .guten-IFP1YC.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-IFP1YC { padding-bottom: 50px; }.guten-ZMUWPN { text-align: center; animation-delay: 0.08s;   } h1.guten-element.guten-ZMUWPN, h2.guten-element.guten-ZMUWPN, h3.guten-element.guten-ZMUWPN, h4.guten-element.guten-ZMUWPN, h5.guten-element.guten-ZMUWPN, h6.guten-element.guten-ZMUWPN { color: rgba(255, 255, 255, 1); font-family: "Poppins"; font-size: 32px; font-weight: 400;  } @media only screen and (max-width: 425px) { h1.guten-element.guten-ZMUWPN, h2.guten-element.guten-ZMUWPN, h3.guten-element.guten-ZMUWPN, h4.guten-element.guten-ZMUWPN, h5.guten-element.guten-ZMUWPN, h6.guten-element.guten-ZMUWPN { font-size: 24px; } }.guten-3ZrIbm { columns: 1; text-align: center; color: rgba(255, 255, 255, 1); font-family: "Heebo"; font-size: 16px; font-weight: 300; animation-delay: 0.16s;  padding-top: 0%; padding-right: 26%; padding-bottom: 0%; padding-left: 26%; } @media only screen and (max-width: 425px) { .guten-3ZrIbm { font-size: 14px; padding-top: 0px; padding-right: 35px; padding-bottom: 0px; padding-left: 35px; } }.guten-NBLpdC.layout-boxed > .guten-container { max-width: 1140px; } .guten-NBLpdC:not(.background-animated), .guten-NBLpdC.background-animated > .guten-background-animated .animated-layer { background-color: var(--wp--preset--color--secondary); } .guten-NBLpdC { border-top-left-radius: 8px;border-top-right-radius: 8px;border-bottom-right-radius: 8px;border-bottom-left-radius: 8px; box-shadow:  0px 0px 22px 0px rgba(35, 25, 1, 0);   margin-top: 50px; margin-right: 0px; margin-bottom: 40px; margin-left: 0px; padding-right: 30px; padding-left: 30px; } @media only screen and (max-width: 780px) { .guten-NBLpdC { margin-right: 15px; margin-left: 15px; padding-right: 25px; padding-bottom: 5px; padding-left: 25px; } } @media only screen and (max-width: 425px) { .guten-NBLpdC > .guten-container { flex-wrap: wrap; } .guten-NBLpdC > .guten-container > .guten-column { width: 100%; } .guten-NBLpdC { border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px; animation-name: none; visibility: visible !important; margin-top: 5px; margin-right: 10px; margin-left: 10px;  } }.guten-4MrYcY.guten-button-wrapper { justify-content: center; } .guten-4MrYcY.guten-button-wrapper .guten-button { width: 17%; background-color: var(--wp--preset--color--white); } .guten-4MrYcY.guten-button-wrapper .guten-button i { margin-left: 12px; font-size: 21px; color: var(--wp--preset--color--secondary); } .guten-4MrYcY.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--secondary); font-family: "Montserrat"; font-size: 17px; font-weight: 600; } .guten-4MrYcY.guten-button-wrapper .guten-button:hover span { color: var(--wp--preset--color--white); } .guten-4MrYcY.guten-button-wrapper .guten-button:hover i { color: var(--wp--preset--color--white); } .guten-4MrYcY.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-4MrYcY { padding-bottom: 50px; }.guten-vlXwR8.layout-boxed > .guten-container { max-width: 1140px; } @media only screen and (max-width: 425px) { .guten-vlXwR8 > .guten-container { flex-wrap: wrap; } .guten-vlXwR8 > .guten-container > .guten-column { width: 100%; } }.guten-U6kUot { columns: 1; font-family: "Montserrat";  }.guten-uMa1vL { width: 33.333333333333%;  } .guten-section > .guten-container > .guten-uMa1vL.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-uMa1vL > .sticky-wrapper > .guten-column-wrapper { border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px; border-style: none; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px;  } @media only screen and (max-width: 780px) { .guten-uMa1vL { width: 33.333333333333%; } .guten-uMa1vL > .sticky-wrapper > .guten-column-wrapper {   } } @media only screen and (max-width: 425px) { .guten-uMa1vL > .sticky-wrapper > .guten-column-wrapper { margin-right: 0px; } }.guten-0rWBqY { width: 33.333333333333%;  } .guten-section > .guten-container > .guten-0rWBqY.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-0rWBqY > .sticky-wrapper > .guten-column-wrapper { margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px;  } @media only screen and (max-width: 780px) { .guten-0rWBqY { width: 33.333333333333%; } } @media only screen and (max-width: 425px) { .guten-0rWBqY > .sticky-wrapper > .guten-column-wrapper { margin-right: 0px; margin-left: 0px; } }.guten-n7Bqww { width: 33.333333333333%;  } .guten-section > .guten-container > .guten-n7Bqww.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-n7Bqww > .sticky-wrapper > .guten-column-wrapper { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 20px;  } @media only screen and (max-width: 780px) { .guten-n7Bqww { width: 33.333333333333%; } } @media only screen and (max-width: 425px) { .guten-n7Bqww > .sticky-wrapper > .guten-column-wrapper { margin-left: 0px; } }.guten-zfc0KG { columns: 1; font-family: "Montserrat";  }.guten-8oDX9D { width: 33.333333333333%;  } .guten-section > .guten-container > .guten-8oDX9D.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-8oDX9D > .sticky-wrapper > .guten-column-wrapper { border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px; border-style: none; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px;  } @media only screen and (max-width: 780px) { .guten-8oDX9D { width: 33.333333333333%; } .guten-8oDX9D > .sticky-wrapper > .guten-column-wrapper {   } } @media only screen and (max-width: 425px) { .guten-8oDX9D > .sticky-wrapper > .guten-column-wrapper { margin-right: 0px; } }.guten-kLtGtH { width: 33.333333333333%;  } .guten-section > .guten-container > .guten-kLtGtH.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-kLtGtH > .sticky-wrapper > .guten-column-wrapper { margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px;  } @media only screen and (max-width: 780px) { .guten-kLtGtH { width: 33.333333333333%; } } @media only screen and (max-width: 425px) { .guten-kLtGtH > .sticky-wrapper > .guten-column-wrapper { margin-right: 0px; margin-left: 0px; } }.guten-C2noAf { width: 33.333333333333%;  } .guten-section > .guten-container > .guten-C2noAf.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-C2noAf > .sticky-wrapper > .guten-column-wrapper { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 20px;  } @media only screen and (max-width: 780px) { .guten-C2noAf { width: 33.333333333333%; } } @media only screen and (max-width: 425px) { .guten-C2noAf > .sticky-wrapper > .guten-column-wrapper { margin-left: 0px; } }.guten-yOFUYl { width: 20%;  } .guten-section > .guten-container > .guten-yOFUYl.guten-column > .sticky-wrapper > .guten-column-wrapper {   } @media only screen and (max-width: 780px) { .guten-yOFUYl { width: 20%; } }.guten-DwFLw5 { width: 80%;  } .guten-section > .guten-container > .guten-DwFLw5.guten-column > .sticky-wrapper > .guten-column-wrapper {   } .guten-DwFLw5 > .sticky-wrapper > .guten-column-wrapper { margin-left: 100px; } @media only screen and (max-width: 780px) { .guten-DwFLw5 { width: 80%; } }.guten-2ybBZ3 img {  height: 200px;  } .guten-2ybBZ3 {  margin-bottom: 15px; }.guten-lbxMiJ img {  height: 200px;  } .guten-lbxMiJ {  margin-bottom: 15px; } @media only screen and (max-width: 780px) { .guten-lbxMiJ img {   } }.guten-yNBZQX img {  height: 200px;  } .guten-yNBZQX {  margin-bottom: 15px; }.guten-tRu9cX video, .guten-tRu9cX .guten-video-background { height: 200px!important; } .guten-tRu9cX { border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;  margin-top: -11px; }.guten-GANKKG img {  height: 200px;  } .guten-GANKKG {  margin-bottom: 15px; } @media only screen and (max-width: 780px) { .guten-GANKKG img {   } }.guten-zzWrT0 img {  height: 200px;  } .guten-zzWrT0 {  margin-bottom: 15px; }h1.guten-element.guten-iRZqRE, h2.guten-element.guten-iRZqRE, h3.guten-element.guten-iRZqRE, h4.guten-element.guten-iRZqRE, h5.guten-element.guten-iRZqRE, h6.guten-element.guten-iRZqRE { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 35px; font-weight: 600;  } .guten-iRZqRE {   }.guten-Kd3Vgj { columns: 1; color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px;  padding-top: 10px; padding-bottom: 30px; }h1.guten-element.guten-sat2kQ, h2.guten-element.guten-sat2kQ, h3.guten-element.guten-sat2kQ, h4.guten-element.guten-sat2kQ, h5.guten-element.guten-sat2kQ, h6.guten-element.guten-sat2kQ { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 35px; font-weight: 600;  }.guten-kLVTxk { columns: 1; color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px;  padding-top: 10px; }.guten-a2p8Fb.guten-button-wrapper { justify-content: left; } .guten-a2p8Fb.guten-button-wrapper .guten-button { width: 35%;  background-color: var(--wp--preset--color--white); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-a2p8Fb.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--secondary); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-a2p8Fb.guten-button-wrapper .guten-button:hover span { color: var(--wp--preset--color--white); } .guten-a2p8Fb.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-a2p8Fb { background-color: ; padding-top: 30px; }.guten-wNyS37 { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-wNyS37, h2.guten-element.guten-wNyS37, h3.guten-element.guten-wNyS37, h4.guten-element.guten-wNyS37, h5.guten-element.guten-wNyS37, h6.guten-element.guten-wNyS37 { font-family: "Montserrat"; font-size: 20px;  }.guten-72nbX7 { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-iuXu8v { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-iuXu8v, h2.guten-element.guten-iuXu8v, h3.guten-element.guten-iuXu8v, h4.guten-element.guten-iuXu8v, h5.guten-element.guten-iuXu8v, h6.guten-element.guten-iuXu8v { font-family: "Montserrat"; font-size: 20px;  }.guten-LIQfPe { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-Q6dqHQ { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-Q6dqHQ, h2.guten-element.guten-Q6dqHQ, h3.guten-element.guten-Q6dqHQ, h4.guten-element.guten-Q6dqHQ, h5.guten-element.guten-Q6dqHQ, h6.guten-element.guten-Q6dqHQ { font-family: "Montserrat"; font-size: 20px;  }.guten-dlzXur { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-QAGH2i { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-QAGH2i, h2.guten-element.guten-QAGH2i, h3.guten-element.guten-QAGH2i, h4.guten-element.guten-QAGH2i, h5.guten-element.guten-QAGH2i, h6.guten-element.guten-QAGH2i { font-family: "Montserrat"; font-size: 20px;  }.guten-ipHH9B { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-mAoqlL { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-mAoqlL, h2.guten-element.guten-mAoqlL, h3.guten-element.guten-mAoqlL, h4.guten-element.guten-mAoqlL, h5.guten-element.guten-mAoqlL, h6.guten-element.guten-mAoqlL { font-family: "Montserrat"; font-size: 20px;  }.guten-nsCsX1 { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-pOefl4 { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-pOefl4, h2.guten-element.guten-pOefl4, h3.guten-element.guten-pOefl4, h4.guten-element.guten-pOefl4, h5.guten-element.guten-pOefl4, h6.guten-element.guten-pOefl4 { font-family: "Montserrat"; font-size: 20px;  }.guten-MET0PC { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-Fk12Mx { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-Fk12Mx, h2.guten-element.guten-Fk12Mx, h3.guten-element.guten-Fk12Mx, h4.guten-element.guten-Fk12Mx, h5.guten-element.guten-Fk12Mx, h6.guten-element.guten-Fk12Mx { font-family: "Montserrat"; font-size: 20px;  }.guten-c594RU { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-usRPaA { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-usRPaA, h2.guten-element.guten-usRPaA, h3.guten-element.guten-usRPaA, h4.guten-element.guten-usRPaA, h5.guten-element.guten-usRPaA, h6.guten-element.guten-usRPaA { font-family: "Montserrat"; font-size: 20px;  }.guten-pm32Sj { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-jShlSS { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-jShlSS, h2.guten-element.guten-jShlSS, h3.guten-element.guten-jShlSS, h4.guten-element.guten-jShlSS, h5.guten-element.guten-jShlSS, h6.guten-element.guten-jShlSS { font-family: "Montserrat"; font-size: 20px;  }.guten-Skik6l { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-xx1X6Y { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-xx1X6Y, h2.guten-element.guten-xx1X6Y, h3.guten-element.guten-xx1X6Y, h4.guten-element.guten-xx1X6Y, h5.guten-element.guten-xx1X6Y, h6.guten-element.guten-xx1X6Y { font-family: "Montserrat"; font-size: 20px;  }.guten-Gmco2f { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-GrY2Dx { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-GrY2Dx, h2.guten-element.guten-GrY2Dx, h3.guten-element.guten-GrY2Dx, h4.guten-element.guten-GrY2Dx, h5.guten-element.guten-GrY2Dx, h6.guten-element.guten-GrY2Dx { font-family: "Montserrat"; font-size: 20px;  }.guten-oMdEkB { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-ia10SR { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-ia10SR, h2.guten-element.guten-ia10SR, h3.guten-element.guten-ia10SR, h4.guten-element.guten-ia10SR, h5.guten-element.guten-ia10SR, h6.guten-element.guten-ia10SR { font-family: "Montserrat"; font-size: 20px;  }.guten-JLZ4vP { columns: 1; column-gap: 93px; text-align: center; font-family: "Montserrat"; font-size: 15px;   padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-1OA2IA { text-align: center;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; } h1.guten-element.guten-1OA2IA, h2.guten-element.guten-1OA2IA, h3.guten-element.guten-1OA2IA, h4.guten-element.guten-1OA2IA, h5.guten-element.guten-1OA2IA, h6.guten-element.guten-1OA2IA { font-family: "Montserrat"; font-size: 20px;  }.guten-B4jaoK { columns: 1; text-align: center; font-family: "Montserrat"; font-size: 15px;  padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }.guten-cgfp8t.guten-button-wrapper { justify-content: center; } .guten-cgfp8t.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-cgfp8t.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-cgfp8t.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-cgfp8t { background-color: ; padding-top: 20px; }.guten-FRX39k.guten-button-wrapper { justify-content: center; } .guten-FRX39k.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-FRX39k.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-FRX39k.guten-button-wrapper .guten-button:hover span { color: var(--wp--preset--color--white); } .guten-FRX39k.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-FRX39k { background-color: ; padding-top: 20px; }.guten-99rqZI.guten-button-wrapper { justify-content: center; } .guten-99rqZI.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-99rqZI.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-99rqZI.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-99rqZI { background-color: ; padding-top: 20px; }.guten-ZGU6N8.guten-button-wrapper { justify-content: center; } .guten-ZGU6N8.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-ZGU6N8.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-ZGU6N8.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-ZGU6N8 { background-color: ; padding-top: 25px; }.guten-Jsc97L.guten-button-wrapper { justify-content: center; } .guten-Jsc97L.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-Jsc97L.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-Jsc97L.guten-button-wrapper .guten-button:hover span { color: var(--wp--preset--color--white); } .guten-Jsc97L.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-Jsc97L { background-color: ; padding-top: 25px; }.guten-eKedtj.guten-button-wrapper { justify-content: center; } .guten-eKedtj.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-eKedtj.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-eKedtj.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-eKedtj { background-color: ; padding-top: 25px; }.guten-UgHcsN.guten-button-wrapper { justify-content: center; } .guten-UgHcsN.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-UgHcsN.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-UgHcsN.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-UgHcsN { background-color: ; padding-top: 25px; }.guten-pq78zN.guten-button-wrapper { justify-content: center; } .guten-pq78zN.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-pq78zN.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-pq78zN.guten-button-wrapper .guten-button:hover span { color: var(--wp--preset--color--white); } .guten-pq78zN.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-pq78zN { background-color: ; padding-top: 25px; }.guten-GsHuAG.guten-button-wrapper { justify-content: center; } .guten-GsHuAG.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-GsHuAG.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-GsHuAG.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-GsHuAG { background-color: ; padding-top: 25px; }.guten-QGphPj.guten-button-wrapper { justify-content: center; } .guten-QGphPj.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-QGphPj.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-QGphPj.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-QGphPj { background-color: ; padding-top: 25px; }.guten-VeR0oy.guten-button-wrapper { justify-content: center; } .guten-VeR0oy.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-VeR0oy.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-VeR0oy.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-VeR0oy { background-color: ; padding-top: 25px; }.guten-Kf1XEK.guten-button-wrapper { justify-content: center; } .guten-Kf1XEK.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-Kf1XEK.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-Kf1XEK.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-Kf1XEK { background-color: ; padding-top: 25px; }.guten-014MJs.guten-button-wrapper { justify-content: center; } .guten-014MJs.guten-button-wrapper .guten-button { width: 50%;  background-color: var(--wp--preset--color--secondary); border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px; } .guten-014MJs.guten-button-wrapper .guten-button span { color: var(--wp--preset--color--white); font-family: "Montserrat"; font-size: 15px; font-weight: 500; } .guten-014MJs.guten-button-wrapper .guten-button:hover { background-color: var(--wp--preset--color--primary); } .guten-014MJs { background-color: ; padding-top: 25px; }		</style>
+		<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style><link rel="icon" href="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/ls40_favi.png" sizes="32x32" />
+<link rel="icon" href="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/ls40_favi.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/ls40_favi.png" />
+<meta name="msapplication-TileImage" content="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/ls40_favi.png" />
+</head>
+
+<body class="home blog wp-embed-responsive">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+<div class="wp-site-blocks">
+<div class="is-layout-flex wp-container-11 wp-block-columns" style="padding-top:0;padding-bottom:0">
+<div class="is-layout-flow wp-container-10 wp-block-column travey-margin-top-n60 has-third-background-color has-background">
+<div class="wp-block-cover" style="padding-top:100px;padding-right:0px;padding-bottom:100px;padding-left:0px;min-height:800px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim" style="background-color:#070707"></span><img decoding="async" loading="lazy" width="8383" height="3269" class="wp-block-cover__image-background wp-image-8" alt="" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img.png" style="object-position:60% 100%" data-object-fit="cover" data-object-position="60% 100%" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img.png 8383w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img-300x117.png 300w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img-1024x399.png 1024w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img-768x299.png 768w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img-1536x599.png 1536w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/header-img-2048x799.png 2048w" sizes="(max-width: 8383px) 100vw, 8383px" /><div class="wp-block-cover__inner-container">
+<div class="is-layout-flex wp-container-4 wp-block-columns">
+<div class="is-layout-flow wp-block-column" style="flex-basis:25%"></div>
+
+
+
+<div class="is-layout-flow wp-block-column" style="flex-basis:50%">
+<figure class="wp-block-image aligncenter size-full"><img decoding="async" loading="lazy" width="487" height="141" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/logo-white.png" alt="" class="wp-image-24" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/logo-white.png 487w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/logo-white-300x87.png 300w" sizes="(max-width: 487px) 100vw, 487px" /></figure>
+
+
+
+<div style="height:7px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center has-white-color has-text-color">Data management platform</h2>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column" style="flex-basis:25%"></div>
+</div>
+
+
+
+<div style="height:1px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="is-layout-flex wp-container-9 wp-block-columns" style="padding-top:20px;padding-bottom:0">
+<div class="is-layout-flow wp-block-column"></div>
+
+
+
+<div class="is-layout-flow wp-block-column" style="padding-right:20px">
+<figure class="wp-block-image alignright size-full is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/KIT_CZ_bila.png" alt="" class="wp-image-23" width="305" height="113" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/KIT_CZ_bila.png 406w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/KIT_CZ_bila-300x111.png 300w" sizes="(max-width: 305px) 100vw, 305px" /></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column" style="padding-left:20px">
+<figure class="wp-block-image alignleft size-full is-resized has-custom-border"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CZU_CZ_bila.png" alt="" class="wp-image-18" style="border-style:none;border-width:0px" width="362" height="99"/></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column"></div>
+</div>
+</div></div>
+</div>
+</div>
+
+
+<header class="wp-block-template-part">
+<div class="is-layout-constrained wp-container-18 wp-block-group travey-margin-top-n50 travey-z-index-10" style="border-style:none;border-width:0px;border-radius:10px;padding-top:0px;padding-bottom:0">
+<div class="is-layout-flex wp-container-17 wp-block-columns are-vertically-aligned-center is-style-customboxshadow has-white-background-color has-background" style="border-style:none;border-width:0px;border-radius:10px">
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center">
+<div class="is-layout-flow wp-block-group">
+<div class="is-layout-flex wp-container-14 wp-block-columns">
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="padding-top:0px;flex-basis:20rem"><h1 style="font-size:32px;" class="wp-elements-b27579eb9ab1047f16da667d2860c329 has-text-align-center has-text-color has-primary-color wp-block-site-title"><a href="http://ls40.vojtechstekly.com" target="_self" rel="home" aria-current="page">Life 4.0 Sciences</a></h1></div>
+
+
+
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div id="guten-6AzyrV" class="guten-element guten-nav-menu nav-menu break-point-tablet submenu-click-title " data-item-indicator="gtn gtn-angle-down-solid" data-close-on-click="1">
+			<div class="gutenverse-hamburger-wrapper">
+				<button class="gutenverse-hamburger-menu">
+					<i aria-hidden="true" class="gtn gtn-bars-solid"></i>
+				</button>
+			</div>
+			<div class="gutenverse-menu-wrapper"><div class="gutenverse-menu-container"><ul id="menu-menu-1" class="gutenverse-menu"><li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-224"><a href="http://ls40.vojtechstekly.com/#datava-platforma" aria-current="page">DATOVÁ PLATFORMA</a></li>
+<li id="menu-item-225" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-225"><a href="http://ls40.vojtechstekly.com/#projekty" aria-current="page">PROJEKTY</a></li>
+<li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-226"><a href="http://ls40.vojtechstekly.com/#akce" aria-current="page">AKCE</a></li>
+<li id="menu-item-227" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-227"><a href="http://ls40.vojtechstekly.com/#kontakty" aria-current="page">KONTAKTY</a></li>
+</ul></div>
+				<div>
+					<div class="gutenverse-nav-identity-panel">
+						<div class="gutenverse-nav-site-title">
+							<a href="http://ls40.vojtechstekly.com" class="gutenverse-nav-logo"></a>
+						</div>
+						<button class="gutenverse-close-menu"><i aria-hidden="true" class="fas fa-times"></i></button>
+					</div>
+				</div>
+			</div>
+		</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="is-layout-flow wp-container-56 wp-block-group">
+<div class="is-layout-flex wp-container-23 wp-block-columns has-secondary-background-color has-background" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
+<div class="is-layout-flow wp-container-19 wp-block-column is-vertically-aligned-top has-travey-primary-background-color has-background" style="padding-top:120px;padding-bottom:120px">
+<div class="section-wrapper" data-id="vlXwR8"><section class="wp-block-gutenverse-section guten-element guten-section guten-vlXwR8 layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-default">
+<div class="wp-block-gutenverse-column guten-element guten-column guten-yOFUYl"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="yOFUYl"><div class="guten-column-wrapper"></div></div></div>
+
+
+
+<div class="wp-block-gutenverse-column guten-element guten-column guten-DwFLw5"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="DwFLw5"><div class="guten-column-wrapper">
+<h2 class="wp-block-gutenverse-heading guten-element guten-iRZqRE" id="datava-platforma">O PROJEKTU</h2>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-Kd3Vgj"><div class="text-content-inner">
+<p>Žijeme v&nbsp;„období vytváření dat“. Miliardy senzorů, kamer a&nbsp;dalších zařízení nepřetržitě monitorují dění na Zemi a&nbsp;různorodou činnost lidské populace. Problémem v&nbsp;současné době využívaných řešení, je jejich slabá provázanost</p>
+</div></div>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-sat2kQ" id="datava-platforma">DATOVÁ PLATFORMA LIFE SCIENCES 4.0</h2>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-kLVTxk"><div class="text-content-inner">
+<p>Datová platforma sdružuje management heterogenních dat od jejich sběru, zpracování, ukládání, až po analýzu a prezentaci. Je otevřena pro integraci dat z různých projektů a oblastí Life Sciences.</p>
+</div></div>
+
+
+
+<div class="guten-element guten-button-wrapper guten-a2p8Fb"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/datova-platforma/"><span>VÍCE INFO</span></a></div>
+</div></div></div>
+</div></section></div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column" style="padding-top:0px;padding-bottom:0px">
+<div class="wp-block-cover aligncenter is-light travey-animate travey-move-left travey-delay-7" style="padding-top:0px;padding-bottom:0rem;min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img decoding="async" class="wp-block-cover__image-background wp-image-1167" alt="" src="http://ls40.vojtechstekly.com/wp-content/themes/travey/assets/img/beach-sea-coast-water-nature-rock-105297-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
+<div class="is-layout-flex wp-container-21 wp-block-columns">
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center"></div>
+</div>
+</div></div>
+</div>
+</div>
+
+
+
+<div id="projekty" class="is-layout-constrained wp-container-55 wp-block-group" style="padding-top:100px;padding-bottom:100px">
+<h2 class="wp-block-gutenverse-heading guten-element guten-6zpN4F">Projekty</h2>
+
+
+
+<div class="is-layout-flex wp-container-30 wp-block-columns" style="padding-top:40px">
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="276" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art8-2.jpg" alt="" class="wp-image-288" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art8-2.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art8-2-300x138.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-wNyS37"><br>ANALÝZA 3D MODELŮ ROSTLIN</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-72nbX7"><div class="text-content-inner">
+<p>Systém pro automatizovanou analýzu 3D modelů rostlin s pomocí umělé inteligence; výzkum se zahraničními partnery (Indie, Turecko).</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-cgfp8t"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/analyza-3d-modelu-rostlin/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="640" height="294" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/hamr-1.jpg" alt="" class="wp-image-287" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/hamr-1.jpg 640w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/hamr-1-300x138.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-iuXu8v">API ONLINE SYSTÉMU PRO ZVLÁDÁNÍ SUCHA</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-LIQfPe"><div class="text-content-inner">
+<p>Jsme součástí komplexního on-line systému pro zvládání sucha (HAMR), poskytli jsme know-hou datové platformy k realizaci aplikačního rozhraní systému…</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-FRX39k"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/api-online-systemu-pro-zvladani-sucha/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="276" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/eye-2.jpg" alt="" class="wp-image-286" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/eye-2.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/eye-2-300x138.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-Q6dqHQ">AI DIAGNOSTIKA CHRONICKÝCH NEMOCÍ Z OKA</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-dlzXur"><div class="text-content-inner">
+<p>Spolupracujeme se start up společností Aireen s.r.o. na projektu vývoje zdravotnického prostředku pro diagnostiku patologií ze snímků oka.</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-99rqZI"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/ai-diagnostika-chronickych-nemoci-z-oka/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flex wp-container-37 wp-block-columns" style="padding-top:40px">
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="269" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art2-3.jpg" alt="" class="wp-image-281" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art2-3.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art2-3-300x135.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-QAGH2i">CROP MODELING<br>  </h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-ipHH9B"><div class="text-content-inner">
+<p>S mezinárodní výzkumnou organizací ICRISAT Modelujeme pěstování Čiroku a dalších plodin pomocí simulačního nástroje APSIM. Výsledky jsou&#8230;</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-ZGU6N8"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/crop-modeling/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="911" height="408" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/potok-2.png" alt="" class="wp-image-280" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/potok-2.png 911w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/potok-2-300x134.png 300w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/potok-2-768x344.png 768w" sizes="(max-width: 911px) 100vw, 911px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-mAoqlL">MONITORING HLADINY ÚNĚTICKÉHO POTOKA</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-nsCsX1"><div class="text-content-inner">
+<p>Realizujeme senzorický experiment ve spolupráci s obcemi v blízkém okolí ČZU, se zaměřením na hospodaření s vodou.</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-Jsc97L"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/monitoring-hladiny-unetickeho-potoka/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="269" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/mars.jpg" alt="" class="wp-image-69" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/mars.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/mars-300x135.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-pOefl4">SCHEMATA – SPOLUPRÁCE S FŽP</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-MET0PC"><div class="text-content-inner">
+<p>S FŽP spolupracujeme na projektu, který porovnává hydrologii Země, Marsu a měsíce Titanu. Naším úkolem je automatizace získávání&#8230;</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-eKedtj"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/schemata-spoluprace-s-fzp/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flex wp-container-44 wp-block-columns" style="padding-top:40px">
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px;padding-bottom:0">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="259" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art1-1-1.jpg" alt="" class="wp-image-277" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art1-1-1.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art1-1-1-300x130.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-Fk12Mx">OBSAZENOST AREÁLU ČZU<br>  </h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-c594RU"><div class="text-content-inner">
+<p>V aplikaci Wolno pomcí dat o počtu připojených uživatelů k Wi-Fi hotspotům v areálu ČZU přibližně monitorujeme obsazenost areálu ČZU.<br> </p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-UgHcsN"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/obsazenost-arealu-czu/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="259" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art6-1.jpg" alt="" class="wp-image-77" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art6-1.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art6-1-300x130.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-usRPaA">ZVĚŘ ONLINE<br></h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-pm32Sj"><div class="text-content-inner">
+<p>Web Zvěř online vizualizuje pohyb jelenů, prasat a hus. Data jsou získávána ze specializovaných GPS obojků a přehledně zobrazována v mapě.</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-pq78zN"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/zver-online/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="640" height="276" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/agata-1.jpg" alt="" class="wp-image-78" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/agata-1.jpg 640w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/agata-1-300x129.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-jShlSS">AGATA &#8211; PROJEKT ERASMUS+</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-Skik6l"><div class="text-content-inner">
+<p>Activating agricultural and tourism specializations through Center of Taste (Aktivace zemědělských a turistických specializací prostřednictvím&#8230;</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-GsHuAG"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/agata-projekt-erasmus/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flex wp-container-49 wp-block-columns" style="padding-top:40px">
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="640" height="218" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/twitter-2.png" alt="" class="wp-image-283" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/twitter-2.png 640w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/twitter-2-300x102.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-xx1X6Y">SOCIÁLNÍ BOTI NA TWITTERU</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-Gmco2f"><div class="text-content-inner">
+<p>Zkoumáme vývoj komunikačních témat a jejich trendů na Twitteru se zaměřením na jejich umělé ovlivňování prostřednictvím sociální botů.</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-QGphPj"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/socialni-boti-na-twitteru/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border"><img decoding="async" loading="lazy" width="600" height="205" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art7-2-1.jpg" alt="" class="wp-image-282" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art7-2-1.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art7-2-1-300x103.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-GrY2Dx">PRECIZNÍ ZEMĚDĚLSTVÍ &#8211; UTIPA</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-oMdEkB"><div class="text-content-inner">
+<p>UŽIVATELSKO-TECHNOLOGICKÝ INDEX PRECIZNÍHO ZEMĚDĚLSTVÍ je komplexní systém pro sdílení hodnocení, zkušeností a názorů na&#8230;</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-VeR0oy"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/precizni-zemedelstvi-utipa/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flex wp-container-54 wp-block-columns" style="padding-top:40px">
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full is-resized has-custom-border"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art5-3.jpg" alt="" class="wp-image-285" style="border-top-left-radius:10px;border-top-right-radius:10px" width="543" height="213" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art5-3.jpg 600w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art5-3-300x118.jpg 300w" sizes="(max-width: 543px) 100vw, 543px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-ia10SR">MONITORING PROSTŘEDÍ VE SKLENÍCÍCH ČZU</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-JLZ4vP"><div class="text-content-inner">
+<p>Ve spolupráci s Fakultou agrobiologie, potravinových a přírodních zdrojů     jsme  instalovali  několik  čidel  v  pokusných  sklenících  ČZU  v Praze na&#8230;</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-Kf1XEK"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/monitoring-prostredi-ve-sklenicich-czu/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-block-group is-style-customboxshadow" style="border-radius:10px;padding-bottom:40px">
+<figure class="wp-block-image size-full has-custom-border is-style-default"><img decoding="async" loading="lazy" width="640" height="252" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art9-3.jpg" alt="" class="wp-image-284" style="border-top-left-radius:10px;border-top-right-radius:10px" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art9-3.jpg 640w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/art9-3-300x118.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" /></figure>
+
+
+
+<h5 class="wp-block-gutenverse-heading guten-element guten-1OA2IA">MONITORING ZAŘÍZENÍ PRO OŠETŘENÍ BIOMASY</h5>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-B4jaoK"><div class="text-content-inner">
+<p>Podíleli jsme se na užitném vzoru zařízení pro fermentaci a teplotní ošetření biomasy společně s Fakultou agrobiologie, potravinových a přírodních&#8230;</p>
+
+
+
+<div class="guten-element guten-button-wrapper guten-014MJs"><a class="guten-button guten-button-sm" href="http://ls40.vojtechstekly.com/monitoring-zarizeni-pro-osetreni-biomasy/"><span>VÍCE INFO</span></a></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="section-wrapper" data-id="QgPv9u"><section class="wp-block-gutenverse-section guten-element guten-section guten-QgPv9u layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-default"></div></section></div>
+
+
+
+<div class="section-wrapper" data-id="uDAmob"><section class="wp-block-gutenverse-section guten-element guten-section guten-uDAmob layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-default"></div></section></div>
+
+
+
+<div id="akce" class="is-layout-constrained wp-block-group"></div>
+
+
+
+<div class="section-wrapper" data-id="DCIHGY"><section class="wp-block-gutenverse-section guten-element guten-section guten-DCIHGY layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-no">
+<div class="wp-block-gutenverse-column guten-element guten-column guten-D46z7W"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="D46z7W"><div class="guten-column-wrapper">
+<div class="guten-element guten-spacer guten-V1k4ON"></div>
+
+
+
+<h1 class="wp-block-gutenverse-heading guten-element guten-rAXcd3 animated guten-element-hide desktop-fadeInUp">Akce</h1>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-jZ3IRh animated guten-element-hide desktop-slideInUp">ČZU SMART DIGITAL CAMPUS</h2>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-oA92ji animated guten-element-hide desktop-fadeInUp"><div class="text-content-inner">
+<div class="guten-element gutenverse-text-editor guten-U6kUot"><div class="text-content-inner">
+<p>23.&nbsp;a&nbsp;30.&nbsp;listopadu&nbsp;2021 proběhl na půdě Provozně ekonomické fakulty 5.&nbsp;ročník Hackathonu na téma ČZU Smart Digital Campus</p>
+</div></div>
+</div></div>
+
+
+
+<div class="section-wrapper" data-id="u4KUuP"><section class="wp-block-gutenverse-section guten-element guten-section guten-u4KUuP animated guten-element-hide desktop-fadeInUp layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-no">
+<div class="wp-block-gutenverse-column guten-element guten-column guten-uMa1vL"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="uMa1vL"><div class="guten-column-wrapper">
+<div class="wp-block-gutenverse-image guten-element guten-image guten-2ybBZ3"><a class="guten-image-wrapper"><img decoding="async" loading="lazy" class="gutenverse-image-box-filled" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/img-article-hackathon-3.jpg" height="934" width="1400"/></a></div>
+</div></div></div>
+
+
+
+<div class="wp-block-gutenverse-column guten-element guten-column guten-0rWBqY"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="0rWBqY"><div class="guten-column-wrapper">
+<div class="wp-block-gutenverse-image guten-element guten-image guten-lbxMiJ"><a class="guten-image-wrapper"><img decoding="async" loading="lazy" class="gutenverse-image-box-filled" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/img-article-hackathon-4.webp" height="683" width="1024"/></a></div>
+</div></div></div>
+
+
+
+<div class="wp-block-gutenverse-column guten-element guten-column guten-n7Bqww"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="n7Bqww"><div class="guten-column-wrapper">
+<div class="wp-block-gutenverse-image guten-element guten-image guten-yNBZQX"><a class="guten-image-wrapper"><img decoding="async" loading="lazy" class="gutenverse-image-box-filled" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/img-article-hackathon-5-1.webp" height="1001" width="1500"/></a></div>
+</div></div></div>
+</div></section></div>
+
+
+
+<div class="guten-element guten-button-wrapper guten-IFP1YC"><a class="guten-button guten-button-md" href="https://kit.pef.czu.cz/probehl-hackathon-2021-smart-digital-ecosystem-czu-v-praze" target="_blank" rel="noreferrer noopener"><span>VÍCE INFO</span><i class="fa-lg fas fa-external-link-alt"></i></a></div>
+</div></div></div>
+</div></section></div>
+
+
+
+<div class="section-wrapper" data-id="IMwrbo"><section class="wp-block-gutenverse-section guten-element guten-section guten-IMwrbo layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-no">
+<div class="wp-block-gutenverse-column guten-element guten-column guten-iy9Nqs"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="iy9Nqs"><div class="guten-column-wrapper">
+<h2 class="wp-block-gutenverse-heading guten-element guten-ZMUWPN animated guten-element-hide desktop-slideInUp">HACKATHON IOT A&nbsp;CHYTRÁ ČZU</h2>
+
+
+
+<div class="guten-element gutenverse-text-editor guten-3ZrIbm animated guten-element-hide desktop-fadeInUp"><div class="text-content-inner">
+<div class="guten-element gutenverse-text-editor guten-zfc0KG"><div class="text-content-inner">
+<p>2.&nbsp;a&nbsp;3&nbsp;dubna&nbsp;2019 proběhl na půdě Provozně ekonomické fakulty 4.&nbsp;ročník Hackathonu na téma IoT a&nbsp;chytrá ČZU. Cílem bylo navrhnout aplikace pro zlepšení kvality života v&nbsp;kampusu ČZU s&nbsp;využitím dat nejen z&nbsp;IoT a&nbsp;dalších chytrých zařízení.</p>
+</div></div>
+</div></div>
+
+
+
+<div class="section-wrapper" data-id="NBLpdC"><section class="wp-block-gutenverse-section guten-element guten-section guten-NBLpdC animated guten-element-hide desktop-fadeInUp layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-no">
+<div class="wp-block-gutenverse-column guten-element guten-column guten-8oDX9D"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="8oDX9D"><div class="guten-column-wrapper">
+<figure class="guten-element guten-video guten-tRu9cX"><div class="guten-video-wrapper" data-property="{&quot;url&quot;:&quot;<a href=\&quot;https://www.youtube.com/watch?time_continue=3&amp;v=8lJrIXe_yA0&amp;feature=emb_logo&amp;ab_channel=Katedrainforma%C4%8Dn%C3%ADchtechnologi%C3%ADPEF%C4%8CZUvPraze\&quot;&gt;Hackathon 2019 - IoT a chytrá ČZU - YouTube</a&gt;&quot;,&quot;class&quot;:&quot;guten-video-background&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;200px&quot;,&quot;controls&quot;:true,&quot;playsinline&quot;:true,&quot;style&quot;:{},&quot;config&quot;:{&quot;youtube&quot;:{&quot;playerVars&quot;:{}}}}"></div></figure>
+</div></div></div>
+
+
+
+<div class="wp-block-gutenverse-column guten-element guten-column guten-kLtGtH"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="kLtGtH"><div class="guten-column-wrapper">
+<div class="wp-block-gutenverse-image guten-element guten-image guten-GANKKG"><a class="guten-image-wrapper"><img decoding="async" loading="lazy" class="gutenverse-image-box-filled" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/img-article-hackathon-1-1-scaled.jpg" height="1709" width="2560"/></a></div>
+</div></div></div>
+
+
+
+<div class="wp-block-gutenverse-column guten-element guten-column guten-C2noAf"><div class="guten-background-overlay"></div><div class="sticky-wrapper" data-id="C2noAf"><div class="guten-column-wrapper">
+<div class="wp-block-gutenverse-image guten-element guten-image guten-zzWrT0"><a class="guten-image-wrapper"><img decoding="async" loading="lazy" class="gutenverse-image-box-filled" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/img-article-hackathon-2-scaled.jpg" height="1709" width="2560"/></a></div>
+</div></div></div>
+</div></section></div>
+
+
+
+<div class="guten-element guten-button-wrapper guten-4MrYcY"><a class="guten-button guten-button-md" href="https://kit.pef.czu.cz/probehl-hackathon-iot-a-chytra-czu" target="_blank" rel="noreferrer noopener"><span>VÍCE INFO</span><i class="fa-lg fas fa-external-link-alt"></i></a></div>
+</div></div></div>
+</div></section></div>
+
+
+<footer class="wp-block-template-part">
+<div class="is-layout-flex wp-container-60 wp-block-columns has-white-background-color has-background">
+<div class="is-layout-flow wp-block-column" style="flex-basis:100%">
+<div class="is-layout-constrained wp-block-group">
+<div class="wp-block-uagb-container uagb-block-748d8346 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
+<div class="wp-block-uagb-container uagb-block-e2533328 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap">
+<div class="wp-block-uagb-container uagb-block-5a658af7 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"></div></div>
+</div></div>
+</div></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="is-layout-constrained wp-container-68 wp-block-group has-white-background-color has-background" style="padding-top:100px;padding-bottom:40px">
+<h2 class="wp-block-gutenverse-heading guten-element guten-2fjeQh">Zapojené subjekty</h2>
+
+
+
+<div class="guten-element guten-spacer guten-DYchT5"></div>
+
+
+
+<div class="is-layout-flex wp-container-67 wp-block-columns" style="padding-top:var(--wp--preset--spacing--40)">
+<div class="is-layout-flow wp-block-column" style="flex-basis:100rem">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/ccss.png" alt="" class="wp-image-96" width="111" height="93"/></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-container-62 wp-block-column" style="padding-top:var(--wp--preset--spacing--30);flex-basis:100rem">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/icrisat.png" alt="" class="wp-image-100" width="203" height="69" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/icrisat.png 332w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/icrisat-300x100.png 300w" sizes="(max-width: 203px) 100vw, 203px" /></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-container-63 wp-block-column" style="padding-right:0px;flex-basis:100rem">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CENDAI.png" alt="" class="wp-image-97" width="96" height="96" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CENDAI.png 313w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CENDAI-300x300.png 300w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CENDAI-150x150.png 150w" sizes="(max-width: 96px) 100vw, 96px" /></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center" style="flex-basis:100rem">
+<figure class="wp-block-image alignleft size-full is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CPZ_EN.png" alt="" class="wp-image-98" width="214" height="94" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CPZ_EN.png 734w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CPZ_EN-300x132.png 300w" sizes="(max-width: 214px) 100vw, 214px" /></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-container-65 wp-block-column is-vertically-aligned-center" style="padding-left:30px;flex-basis:100rem">
+<figure class="wp-block-image aligncenter size-large is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/PEF_CZ_cervena-1024x166.png" alt="" class="wp-image-101" width="305" height="50" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/PEF_CZ_cervena-1024x166.png 1024w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/PEF_CZ_cervena-300x49.png 300w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/PEF_CZ_cervena-768x125.png 768w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/PEF_CZ_cervena.png 1298w" sizes="(max-width: 305px) 100vw, 305px" /></figure>
+</div>
+
+
+
+<div class="is-layout-flow wp-container-66 wp-block-column is-vertically-aligned-center" style="padding-left:30px;flex-basis:100rem">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CSITA.png" alt="" class="wp-image-99" width="194" height="57" srcset="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CSITA.png 487w, http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/CSITA-300x87.png 300w" sizes="(max-width: 194px) 100vw, 194px" /></figure>
+</div>
+</div>
+</div>
+
+
+
+<div class="guten-element guten-spacer guten-UtR0bu"></div>
+
+
+
+<div id="kontakty" class="is-layout-constrained wp-container-80 wp-block-group has-secondary-background-color has-background" style="padding-top:50px;padding-bottom:100px">
+<div class="is-layout-constrained wp-container-71 wp-block-group" style="padding-bottom:20px">
+<div class="is-layout-flex wp-container-70 wp-block-columns">
+<div class="is-layout-flow wp-block-column" style="padding-right:0em;padding-left:0em">
+<h2 class="wp-block-gutenverse-heading guten-element guten-XzWxCd">Kontakty</h2>
+</div>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-container-79 wp-block-group">
+<div class="is-layout-flex wp-container-78 wp-block-columns">
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center travey-animate travey-move-up travey-delay-1" style="padding-right:15px">
+<div class="is-layout-flow wp-container-72 wp-block-group is-style-customboxshadow has-secondary-background-color has-background" style="border-radius:10px;padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px">
+<h2 class="wp-block-gutenverse-heading guten-element guten-zoxxGG">Vedoucí projektu</h2>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-NwLSVL"><a href="tel: +420224382293">doc. Ing.&nbsp;Jiří Vaněk,&nbsp;Ph.D.</a></h2>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-g9rBtV"><a href="mailto:%20jarolimek@pef.czu.cz">vanek@pef.czu.cz</a><a href="tel: +420224382293">.</a></h2>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center travey-animate travey-move-up travey-delay-3" style="padding-right:15px;padding-left:15px">
+<div class="is-layout-flow wp-container-74 wp-block-group is-style-customboxshadow has-secondary-background-color has-background" style="border-radius:10px;padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px">
+<h2 class="wp-block-gutenverse-heading guten-element guten-YiSWo6">IoT a&nbsp;sběr dat</h2>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-l6uGL1"><a href="tel: +420224382293">Ing.&nbsp;Michal Stočes,&nbsp;Ph.D.</a></h2>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-5Bvogw"><a href="tel: +420224382293"></a><a href="mailto:%20jarolimek@pef.czu.cz">stoces@pef.czu.cz</a></h2>
+</div>
+</div>
+
+
+
+<div class="is-layout-flow wp-block-column is-vertically-aligned-center travey-animate travey-move-up travey-delay-5" style="padding-left:15px">
+<div class="is-layout-flow wp-container-76 wp-block-group is-style-customboxshadow has-secondary-background-color has-background" style="border-radius:10px;padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px">
+<h2 class="wp-block-gutenverse-heading guten-element guten-fpXXLK">Ukládání dat, vizualizace</h2>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-UDWTu9"><a href="tel: +420777842371">Ing.&nbsp;Jan Masner,&nbsp;Ph.D.</a></h2>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-06cB3L"><a href="mailto:%20masner@pef.czu.cz">masner@pef.czu.cz</a></h2>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-gutenverse-heading guten-element guten-oKMe6g">Provozuje</h2>
+
+
+
+<div class="wp-block-gutenverse-image guten-element guten-image guten-QnjPNr"><a class="guten-image-wrapper"><img decoding="async" loading="lazy" class="gutenverse-image-box-filled" src="http://ls40.vojtechstekly.com/wp-content/uploads/2022/11/KIT_CZ_bila.png" height="150" width="406"/></a></div>
+</div>
+</footer>
+
+
+<div class="section-wrapper" data-id="fk0oxb"><section class="wp-block-gutenverse-section guten-element guten-section guten-fk0oxb layout-boxed align-stretch"><div class="guten-background-overlay"></div><div class="guten-shape-divider guten-shape-divider-top"></div><div class="guten-shape-divider guten-shape-divider-bottom"></div><div class="guten-container guten-column-gap-default"></div></section></div>
+</div>
+
+		<style id="skip-link-styles">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Přeskočit na obsah';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	</script>
+	
+<script id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id='rocket-preload-links-js-extra'>
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"http:\/\/ls40.vojtechstekly.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src='http://ls40.vojtechstekly.com/wp-content/themes/travey//assets/js/index.js?ver=1.0.3' id='travey-animate-js' defer></script>
+<script src='http://ls40.vojtechstekly.com/wp-content/plugins/gutenverse/assets/frontend/react-player/ReactPlayer.standalone.js?ver=1.6.2' id='react-player-dep-js' defer></script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19' id='lodash-js'></script>
+<script id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js' defer></script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/url.min.js?ver=bb0ef862199bcae73aa7' id='wp-url-js'></script>
+<script id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-11-22 21:18:20+0000","generator":"GlotPress\/4.0.0-alpha.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);","lang":"cs_CZ"},"You are probably offline.":["Z\u0159ejm\u011b jste offline."],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["Nahr\u00e1v\u00e1n\u00ed souboru se nezda\u0159ilo. Pokud se jedn\u00e1 o fotku, nebo velk\u00fd obr\u00e1zek, zmen\u0161ete jeho rozm\u011bry a zkuste to znovu."],"The response is not a valid JSON response.":["Odpov\u011b\u010f nen\u00ed platn\u00e1 odpov\u011b\u010f ve form\u00e1tu JSON."],"An unknown error occurred.":["Vyskytla se nezn\u00e1m\u00e1 chyba."]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+</script>
+<script src='http://ls40.vojtechstekly.com/wp-includes/js/dist/api-fetch.min.js?ver=bc0029ca2c943aec5311' id='wp-api-fetch-js'></script>
+<script id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "http://ls40.vojtechstekly.com/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "46f7843057" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "http://ls40.vojtechstekly.com/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script id='gutenverse-frontend-event-js-extra'>
+var GutenverseData = {"postId":"1","query":{"q_search":null}};
+</script>
+<script src='http://ls40.vojtechstekly.com/wp-content/plugins/gutenverse/assets/js/frontend.js?ver=1.6.2' id='gutenverse-frontend-event-js' defer></script>
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1669998228 -->
